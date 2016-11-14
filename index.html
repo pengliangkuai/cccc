@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>i8mi</title>
+        <!--        META SECTION-->
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=false" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+
+        <!--        STYLES SECTION -->
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" /> 
+        <link rel="stylesheet" href="css/lightRed.css" />
+         <link rel="shortcut icon" type="" href="nor.ico" />
+       <link rel="stylesheet" href="forGundong/dist/css/swiper.min.css">
+        <script type="" src="forGundong/dist/js/swiper.min.js"></script>
+        
+        
+        
+        
+
+        <!--        FONTS SECTION -->
+
+        
+        
+
+
+
+
+        <!--        SCRIPT SECTION -->
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.0.min.js"></script> 
+        <script type="text/javascript" src="forViewer/viewer.min.js"></script>
+        <link rel="stylesheet" href="forViewer/viewer.min.css">
+        <style>
+        .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 20px auto;
+    color: white;
+}
+
+.swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+     
+}
+
+.swiper-container .swiper-wrapper .slideA {
+    background-image:#fff;
+     background-image: url(cc/images/fulls/05.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideB {
+    background-color: #8C8;
+     background-image: url(cc/images/fulls/04.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideC {
+    background-color: #b9d116;
+     background-image: url(cc/images/fulls/03.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideD {
+    background-color: #cc8115;
+     background-image: url(cc/images/fulls/02.jpg);
+}
+
+.swiper-container .swiper-wrapper .slideE {
+    background-color: #cc247f;
+    background-image: url(cc/images/fulls/01.jpg);
+}
+
+.swiper-container .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+}
+
+.swiper-container .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+.swiper-container .swiper-button-prev {
+    background-image: url(../img/left-arrow.svg);
+}
+
+.swiper-container .swiper-button-next {
+  background-image: url(../img/right-arrow.svg);
+}
+#header nav div a{
+    color: #666 !important;
+    text-shadow: none;
+}
+</style>
+        
+
+</head>
+<body>
+        <!--    Page initialization      -->
+<!--        <div data-role="page">-->
+
+
+
+         
+               <div style="width: 100%;height: 220px;">
+                     
+                     
+        <!--     Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slideA" style="width: 100%"><h1></h1></div>
+            <div class="swiper-slide slideB" style="width: 100%"><h1></h1></div>
+            <div class="swiper-slide slideC" style="width: 100%"><h1></h1></div>
+            <div class="swiper-slide slideD" style="width: 100%"><h1></h1></div>
+            <div class="swiper-slide slideE" style="width: 100%"><h1></h1></div>
+        </div>
+        <!--         Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!--     Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop: true,
+            autoplay: 3000,
+//            speed: 1000,
+            autoplayDisableOnInteraction: false,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+//            effect:'fade'
+            
+        });
+    </script>
+    </div> 
+    
+       <!--            Header-->
+         <header data-role="header" style="border:none;" id="header">
+     
+    
+          
+                   <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a class="" href="index.html" data-transition="flip">首页</a></div>
+                    <div class="ui-block-b"><a href="blog.html" data-transition="flip">阅读</a></div>
+                    <div class="ui-block-c"><a href="portfolio.html" data-transition="flip">作品</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">精选</a></div>
+              
+                </nav>
+               
+            </header>
+            <!--         Heder     END  -->
+            
+
+
+
+
+            <!--            Main Content-->
+          <section data-role="content" class="wrappedWidth" id="index">
+                <div class="section-image">
+                    <img class="mainIMG" src="images/refimages/aboutme.jpg" alt="About me" />
+                    <h2>每一个生命来到世间都注定改变世界</h2>
+                    <div class="article-wrapper">
+                        <p>每个人都有着不同的理解与开始，而对于我来说，至今我还分不清或好或坏，更多的感受是充实、忙碌、平淡、安逸吧！
+             </p>
+                        <p>最后就是觉得，时间很宝贵，珍惜时间，就是对于自己最大的厚爱！ </p>
+                    </div>
+                </div>
+
+
+
+
+
+                <!--                Latest news section-->
+   <div id="dowebok">
+                    <section id="latest-news">
+                    <div class="section-image">
+                        <a href="#"><img class="mainIMG" src="images/refimages/044.jpg" alt="Latest News" /></a>
+                        <h2>视＋官网</h2>
+                        
+                    </div>
+                </section>
+ <section id="latest-news">
+                    <div class="section-image">
+                        <a href="#"><img class="mainIMG" src="images/refimages/0444.jpg" alt="Latest News" /></a>
+                        <h2>滴滴官网</h2>
+                        
+                    </div>
+                </section> <section id="latest-news">
+                    <div class="section-image">
+                        <a href="#"><img class="mainIMG" src="images/refimages/04444.jpg" alt="Latest News" /></a>
+                        <h2>支付宝登陆</h2>
+                        
+                    </div>
+                </section>
+   </div>
+                
+                <script>
+                    var viewer =new Viewer(document.getElementById('dowebok'),{url:'data-original'});
+              </script>
+
+
+              
+                </section>
+            <!--  Main Content     END  -->
+            
+                <section id="latest-projects">
+                    <div class="section-image">
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a portfolio-featured">
+                                <a href="contact.html">
+                                    <h4>产品设计</h4>
+                                    <img src="images/blog/021.jpg" alt="01" />
+                                </a>
+                            </div>
+                            <div class="ui-block-b portfolio-featured">
+                                <a href="contact.html">
+                                    <h4>数据分析</h4>
+                                    <img src="images/blog/1213.jpg" alt="02" />
+                                </a>
+                            </div>
+                            <div class="ui-block-a portfolio-featured">
+                                <a href="contact.html">
+                                    <h4>业界动态</h4>
+                                    <img src="images/blog/0111.jpg" alt="03" />
+                                </a>
+                            </div>
+                            <div class="ui-block-b portfolio-featured">
+                                <a href="contact.html">
+                                    <h4>产品经理</h4>
+                                    <img src="images/blog/012.jpg" alt="04" />
+                                </a>
+                            </div>
+                        </div>
+<!--
+                        <div class="article-wrapper">
+                            <a href="portfolio.html"><h3>Latest projects</h3></a>
+                            <p>Suspendisse at erat eros. Nunc vel sem sed dui faucibus placerat bibendum ut velit. Morbi porttitor congue nibh in euismod. Curabitur sed urna quis turpis interdum tempor pharetra vehicula lacus. Vestibulum quam nulla, consectetur vitae pharetra ut, congue nec quam.</p>
+                        </div>
+-->
+                    </div>
+                </section>
+            </section>
+
+
+
+
+
+
+                    
+            <footer data-role="footer" data-theme="a" data-position="inline">
+                <hr class="divider" />
+<!--
+                <h4>Follow me on</h4>
+                <div class="ui-grid-c wrappedWidth shareIcons">
+                    <div class="ui-block-a"><a href="#"><img src="images/lightGreen/fb.png" alt="Facebook" /></a></div>
+                    <div class="ui-block-b"><a href="#"><img src="images/lightGreen/digg.png" alt="Digg" /></a></div>
+                    <div class="ui-block-c"><a href="#"><img src="images/lightGreen/twitter.png" alt="Twitter" /></a></div>
+                    <div class="ui-block-d"><a href="#"><img src="images/lightGreen/rss.png" alt="RSS" /></a></div>
+-->
+                </div>
+
+                
+
+<!--
+                <nav class="ui-grid-c">
+                    <div class="ui-block-a"><a class="navSelected" href="index.html" data-transition="flip">首页</a></div>
+                    <div class="ui-block-b"><a href="portfolio.html" data-transition="flip">阅读</a></div>
+                    <div class="ui-block-c"><a href="blog.html" data-transition="flip">作品</a></div>
+                    <div class="ui-block-d"><a href="contact.html" data-transition="flip">精选</a></div>
+            </nav>
+-->
+            </footer>   
+            <!--  Footer     END  -->  
+
+<!--        </div>-->
+        <!--     Page initialization    END  -->
+    </body>
+</html>
